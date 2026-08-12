@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102f56" />
+    <meta
+      name="description"
+      content="一封在八月十六日开启的六周年纪念邀请。"
+    />
+    <title>我们的八月十六日</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="ocean-canvas" aria-hidden="true"></canvas>
+    <div class="ocean-light ocean-light-one" aria-hidden="true"></div>
+    <div class="ocean-light ocean-light-two" aria-hidden="true"></div>
+
+    <button
+      class="sound-button icon-button"
+      id="sound-button"
+      type="button"
+      aria-label="播放音乐"
+      title="播放音乐"
+    >
+      <span class="sound-icon" aria-hidden="true">♪</span>
+    </button>
+
+    <button
+      class="cat-bgm-toggle"
+      id="cat-bgm-toggle"
+      type="button"
+      aria-label="切换搞怪音乐"
+    >
+      <img class="cat-paw-image" src="./assets/cat-paw.png?v=1" alt="" aria-hidden="true" />
+    </button>
+
+    <audio id="background-music" loop preload="auto">
+      <source src="./assets/anniversary-music.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="funny-music" loop preload="auto">
+      <source src="./assets/funny-music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main>
+      <section class="countdown-screen screen" id="countdown-screen">
+        <div class="countdown-content">
+          <p class="eyebrow">A LETTER FOR AUGUST 16</p>
+          <h1>距离我们的六周年</h1>
+          <div class="pearl-rule" aria-hidden="true"></div>
+          <div class="countdown" aria-label="纪念日倒计时">
+            <div class="time-unit">
+              <strong id="days">00</strong>
+              <span>天</span>
+            </div>
+            <div class="time-divider" aria-hidden="true">:</div>
+            <div class="time-unit">
+              <strong id="hours">00</strong>
+              <span>时</span>
+            </div>
+            <div class="time-divider" aria-hidden="true">:</div>
+            <div class="time-unit">
+              <strong id="minutes">00</strong>
+              <span>分</span>
+            </div>
+            <div class="time-divider" aria-hidden="true">:</div>
+            <div class="time-unit">
+              <strong id="seconds">00</strong>
+              <span>秒</span>
+            </div>
+          </div>
+          <p class="countdown-note">有一份小小的惊喜，正在穿过海水向你游来。</p>
+          <button class="preview-button" id="preview-button" type="button">
+            本地预览纪念内容
+          </button>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <div class="celebration-site" id="celebration-site" hidden>
+        <section class="hero screen section-observe" id="hero">
+          <div class="hero-content">
+            <p class="eyebrow">OUR SIXTH ANNIVERSARY</p>
+            <p class="hero-date">08 · 16</p>
+            <h1>八月十六日快乐</h1>
+            <p class="hero-subtitle">恋爱六周年快乐，我最爱的你。</p>
+            <button class="primary-button" data-scroll-to="story" type="button">
+              打开这封写给你的信
+              <span aria-hidden="true">↓</span>
+            </button>
+          </div>
+          <div class="reef-silhouette" aria-hidden="true">
+            <span class="coral coral-one"></span>
+            <span class="coral coral-two"></span>
+            <span class="seaweed seaweed-one"></span>
+            <span class="seaweed seaweed-two"></span>
+            <span class="seaweed seaweed-three"></span>
+          </div>
+        </section>
+
+        <section class="story section-observe" id="story">
+          <button class="page-back" data-scroll-to="hero" type="button" aria-label="返回祝福页">
+            <span aria-hidden="true">←</span>
+            返回上一页
+          </button>
+          <div class="section-inner story-inner">
+            <p class="section-index">01 / SIX YEARS</p>
+            <div class="story-lines">
+              <p>六年，不只是时间。</p>
+              <p>是许多个普通日子，<br />被我们一起变得特别。</p>
+              <p>而接下来的故事，<br />也想继续和你一起。</p>
+            </div>
+            <button class="text-button" data-scroll-to="letter" type="button">
+              继续往下
+              <span aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="letter-section section-observe" id="letter">
+          <button class="page-back" data-scroll-to="story" type="button" aria-label="返回六周年故事">
+            <span aria-hidden="true">←</span>
+            返回上一页
+          </button>
+          <div class="section-inner letter-layout">
+            <div class="letter-heading">
+              <p class="section-index">02 / A LETTER</p>
+              <h2>写给<br />{她的称呼}</h2>
+              <p>生活很忙，但仪式感还是要有</p>
+            </div>
+
+            <article class="letter-paper">
+              <div class="letter-stamp" aria-hidden="true">6</div>
+              <p class="letter-salutation">亲爱的 {她的称呼}：</p>
+              <p>
+                又走到了八月十六日。回头看，我们已经一起收藏了六年的春夏秋冬。
+                谢谢你走进我的生活，也谢谢你一直愿意留在我的故事里。
+              </p>
+              <p>
+                这六年里，有热烈的心动，也有安静陪伴的日常。你让我明白，喜欢一个人，
+                不只是记住特别的日子，也是愿意把每一个普通明天，都认真地留给她。
+              </p>
+              <p>
+                我希望以后还有很多个八月十六日。希望我们去看更远的海、认识更多可爱的生命，
+                也希望每次回头的时候，你依然在我身边。
+              </p>
+              <p>六周年快乐。下一段旅程，也请继续和我一起吧。</p>
+              <p class="letter-signature">
+                永远爱你的<br />
+                <strong>{你的署名}</strong>
+              </p>
+              <button class="text-button letter-next" data-scroll-to="invitation" type="button">
+                去看看下一封邀请
+                <span aria-hidden="true">↓</span>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="invitation-section section-observe" id="invitation">
+          <button class="page-back" data-scroll-to="letter" type="button" aria-label="返回情书页">
+            <span aria-hidden="true">←</span>
+            返回上一页
+          </button>
+          <div class="section-inner invitation-layout">
+            <div class="invitation-copy">
+              <p class="section-index">03 / OUR NEXT DATE</p>
+              <h2>选一个日子，<br />我们一起去看海。</h2>
+              <p>选好之后，这只信封会把下一份回忆送到你手里。</p>
+
+              <form class="date-form" id="date-form">
+                <label for="visit-date">我们的海洋约会</label>
+                <div class="date-row">
+                  <input id="visit-date" name="visit-date" type="date" required />
+                  <button class="primary-button" id="open-envelope" type="submit" disabled>
+                    开启邀请
+                  </button>
+                </div>
+                <p class="form-message" id="form-message" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <div class="envelope-stage" id="envelope-stage">
+              <div class="envelope" id="envelope" aria-label="一封等待开启的信">
+                <div class="envelope-back"></div>
+                <div class="ticket-preview" aria-hidden="true">
+                  <span>OUR OCEAN DATE</span>
+                  <strong>08 · 16</strong>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="wax-seal" aria-hidden="true">6</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ticket-section section-observe" id="ticket-section" hidden>
+          <button class="page-back" data-scroll-to="invitation" type="button" aria-label="返回日期选择页">
+            <span aria-hidden="true">←</span>
+            返回上一页
+          </button>
+          <div class="section-inner ticket-layout">
+            <div class="ticket-copy">
+              <p class="section-index">04 / THE INVITATION</p>
+              <h2>下一站，<br /><span class="ticket-destination">长隆海洋王国。</span></h2>
+              <p id="ticket-status-copy">这是一张只属于我们两个人的纪念邀请券。</p>
+            </div>
+
+            <div class="ticket-wrapper">
+              <article class="ticket" id="ticket">
+                <div class="ticket-main">
+                  <div class="ticket-brand">
+                    <span>OUR SIXTH ANNIVERSARY</span>
+                    <strong>海洋约会纪念邀请券</strong>
+                  </div>
+                  <div class="ticket-whale" aria-hidden="true">
+                    <span class="whale-tail"></span>
+                    <span class="whale-body"></span>
+                  </div>
+                  <p class="ticket-place">珠海 · 长隆海洋王国</p>
+                  <p class="ticket-promise">邀请 {她的称呼} ，一起去看鲸鲨、企鹅和海。</p>
+                  <div class="ticket-details">
+                    <div>
+                      <span>DATE</span>
+                      <strong id="ticket-date">2026.08.16</strong>
+                    </div>
+                    <div>
+                      <span>GUESTS</span>
+                      <strong>2 PERSONS</strong>
+                    </div>
+                    <div>
+                      <span>PASS NO.</span>
+                      <strong id="ticket-number">LOVE-0816</strong>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="ticket-stub">
+                  <span>ADMIT TWO</span>
+                  <strong>6TH</strong>
+                  <span>WITH LOVE</span>
+                </div>
+              </article>
+
+              <div class="ticket-actions">
+                <button class="primary-button" id="accept-and-download" type="button">
+                  确认赴约
+                </button>
+                <button class="text-button" id="change-date" type="button">
+                  重新选择日期
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>TO BE CONTINUED · 08.16</p>
+          <strong>六周年快乐</strong>
+        </footer>
+      </div>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
