@@ -61,7 +61,7 @@ const elements = {
 
 const unlockTimestamp = new Date(CONFIG.unlockTime).getTime();
 const isLocalhost = ["localhost", "127.0.0.1", ""].includes(window.location.hostname);
-const previewMode = isLocalhost ? new URLSearchParams(window.location.search).get("preview") : null;
+const previewMode = new URLSearchParams(window.location.search).get("preview");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let countdownTimer = null;
 let toastTimer = null;
