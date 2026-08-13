@@ -310,11 +310,6 @@ function restoreInvitation() {
 
   elements.visitDate.value = state.visitDate;
   elements.openEnvelope.disabled = false;
-  revealTicket(state.visitDate, false);
-
-  if (state.accepted) {
-    markAccepted(false);
-  }
 }
 
 function markAccepted(celebrate = true) {
