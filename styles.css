@@ -985,18 +985,18 @@ body.local-preview .preview-button {
 
 .envelope-flap {
   z-index: 5;
-  height: 64%;
+  height: 100%;
   transform-origin: top center;
   backface-visibility: hidden;
   background: #f4b1c5;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  clip-path: polygon(0 0, 100% 0, 50% 69%);
   transition: none;
 }
 
 .wax-seal {
   position: absolute;
   z-index: 6;
-  top: 43%;
+  top: 46%;
   left: calc(50% - 31px);
   display: grid;
   place-items: center;
