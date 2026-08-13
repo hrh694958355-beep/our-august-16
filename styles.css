@@ -987,7 +987,7 @@ body.local-preview .preview-button {
   z-index: 5;
   height: 100%;
   transform-origin: top center;
-  backface-visibility: hidden;
+  backface-visibility: visible;
   transform: rotateX(0deg);
   background: #f4b1c5;
   clip-path: polygon(0 0, 100% 0, 50% 69%);
@@ -1040,6 +1040,7 @@ body.local-preview .preview-button {
 .envelope.is-open .envelope-flap {
   z-index: 1;
   transform: rotateX(180deg);
+  backface-visibility: visible;
   transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
