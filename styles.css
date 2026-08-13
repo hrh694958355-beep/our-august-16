@@ -994,31 +994,6 @@ body.local-preview .preview-button {
   transition: none;
 }
 
-.wax-seal {
-  position: absolute;
-  z-index: 6;
-  top: 46%;
-  left: calc(50% - 31px);
-  display: grid;
-  place-items: center;
-  width: 62px;
-  height: 62px;
-  border: 4px double rgba(255, 218, 222, 0.52);
-  border-radius: 50%;
-  color: #ffdbe4;
-  background: #a33e61;
-  box-shadow: 0 8px 18px rgba(87, 26, 52, 0.3);
-  font-family: Georgia, serif;
-  font-size: 28px;
-  transition: opacity 300ms ease, transform 500ms ease;
-}
-
-.envelope:not(.is-open) .wax-seal {
-  z-index: 8;
-  opacity: 1;
-  visibility: visible;
-}
-
 .ticket-preview {
   position: absolute;
   z-index: 3;
@@ -1068,16 +1043,15 @@ body.local-preview .preview-button {
   transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.envelope.is-open .wax-seal {
-  opacity: 0;
-  transform: scale(0.65);
+.envelope.is-open .envelope-front {
+  z-index: 2;
 }
 
 .envelope.is-open .ticket-preview {
-  z-index: 7;
+  z-index: 8;
   opacity: 1;
   visibility: visible;
-  transform: translateY(-72%);
+  transform: translateY(-82%);
 }
 
 .ticket-section {
