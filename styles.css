@@ -988,6 +988,7 @@ body.local-preview .preview-button {
   height: 100%;
   transform-origin: top center;
   backface-visibility: hidden;
+  transform: rotateX(0deg);
   background: #f4b1c5;
   clip-path: polygon(0 0, 100% 0, 50% 69%);
   transition: none;
@@ -1010,6 +1011,12 @@ body.local-preview .preview-button {
   font-family: Georgia, serif;
   font-size: 28px;
   transition: opacity 300ms ease, transform 500ms ease;
+}
+
+.envelope:not(.is-open) .wax-seal {
+  z-index: 8;
+  opacity: 1;
+  visibility: visible;
 }
 
 .ticket-preview {
@@ -1067,6 +1074,7 @@ body.local-preview .preview-button {
 }
 
 .envelope.is-open .ticket-preview {
+  z-index: 7;
   opacity: 1;
   visibility: visible;
   transform: translateY(-72%);
