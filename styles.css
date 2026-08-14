@@ -2055,15 +2055,15 @@ body.ticket-preview-mode .ticket-section {
 
 /* Cat paw music button. */
 .cat-bgm-toggle {
-  top: 15px !important;
+  top: 24px !important;
   right: 78px !important;
-  width: 52px !important;
-  height: 52px !important;
+  width: 42px !important;
+  height: 42px !important;
   overflow: hidden !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
-  transform-origin: 50% 100% !important;
+  transform-origin: 50% 50% !important;
   padding: 0 !important;
 }
 
@@ -2101,9 +2101,9 @@ body.ticket-preview-mode .ticket-section {
 
 @media (max-width: 560px) {
   .cat-bgm-toggle {
-    top: 7px !important;
-    right: 76px !important;
-    width: 48px !important;
-    height: 48px !important;
+    top: 16px !important;
+    right: 66px !important;
+    width: 42px !important;
+    height: 42px !important;
   }
 }
