@@ -2101,7 +2101,7 @@ body.ticket-preview-mode .ticket-section {
 
 @media (max-width: 560px) {
   .cat-bgm-toggle {
-    top: 11px !important;
+    top: 9px !important;
     right: 76px !important;
     width: 48px !important;
     height: 48px !important;
